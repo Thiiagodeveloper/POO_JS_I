@@ -22,9 +22,34 @@ Student.prototype.aprobarCurso = function (nuevoCurso) {
   this.cursosAprobados.push(nuevoCurso);
 };
 
-const santiago = new Student("Santiago", 20, [
-  "Curso de videoGames",
-  "Curso de Personajes",
-]);
+const santiago = new Student(
+  "Santiago", 20, 
+  [
+    "Curso de videoGames",
+    "Curso de Personajes",
+  ]);
 
-console.log(natalia);
+console.log(santiago);
+
+//Prototipos con la sintaxis de class
+
+class Student2 {
+    constructor({name, age, cursosAprobados = [], email, }) {
+      this.name = name;
+      this.age = age;
+      this.cursosAprobados = cursosAprobados;
+      this.email = email;
+    }
+
+    aprobarCurso(nuevoCurso){
+      this.cursosAprobados.push(nuevoCurso)
+    }
+}
+
+
+const miguelito = new Student2({
+  email:"miguelito@platzi.com",
+  age: 20,
+  name: 'Miguel',
+})
+

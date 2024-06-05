@@ -1,5 +1,5 @@
 //CLASS 5 = WHAT IS LITERALS OBJECTS AND JS PROTOTYPES
-function Pokemon(name, type, weaknesses, gender, numPokedex) {
+function Pokemon({name, type, weaknesses, gender, numPokedex}) {
   this.name = name;
   this.type = type;
   this.weaknesses = weaknesses;
